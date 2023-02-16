@@ -33,6 +33,69 @@ const Header = () => {
           </Row>
         </Container>
       </div>
+
+      {/* ==== header middle ==== */}
+      <div className="header_middle">
+        <Container>
+          <Row>
+            <Col lg="4" md="3" sm="4">
+              <div className="logo">
+                <h1>
+                  <Link to="/home" className="d-flex align-items-center gap-2">
+                    <i class="ri-car-line"></i>
+                    <span>
+                      Alucar <br />
+                      Rent Service
+                    </span>
+                  </Link>
+                </h1>
+              </div>
+            </Col>
+
+            <Col lg="3" md="3" sm="4">
+              <div className="header_location d-flex align-items-center gap-2">
+                <span>
+                  <i class="ri-earth-line"></i>
+                </span>
+                <div className="header_location-content">
+                  <address>
+                    <h4>Brazil</h4>
+                    <h6>São Paulo city, Brazil</h6>
+                  </address>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg="3" md="3" sm="4">
+              <div className="header_location d-flex align-items-center gap-2">
+                <span>
+                  <i class="ri-time-line"></i>
+                </span>
+                <div className="header_location-content">
+                  <h4>Everyday</h4>
+                  <h6>
+                    <time>10am - 7pm</time>
+                  </h6>
+                </div>
+              </div>
+            </Col>
+
+            <Col
+              lg="2"
+              md="3"
+              sm="0"
+              className="d-flex align-items-center justify-content-end"
+            >
+              <button className="header_btn btn  text-end">
+                <Link to="/contact">
+                  <i class="ri-phone-line"></i>
+                  Request a call
+                </Link>
+              </button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </header>
   );
 };
