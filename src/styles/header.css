@@ -1,3 +1,4 @@
+/* ====== Top header style ====== */
 .header_top {
   padding: 10px 0;
   background: #f46036;
@@ -103,4 +104,71 @@
 
 .header_btn a:hover {
   color: #d6d5c9;
+}
+
+/* ====== main header style ====== */
+
+.main_navbar {
+  padding: 15px 0;
+  background: #f46036;
+}
+
+.mobile_menu {
+  color: #d6d5c9;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+}
+
+.nav_item {
+  color: #d6d5c9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav_item:hover {
+  color: #f9a826;
+}
+
+.search_box {
+  border: solid 1px #b9baa3c3;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background: #da5631;
+}
+
+.search_box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #d6d5c9;
+  cursor: pointer;
+}
+
+.search_box input::placeholder {
+  font-size: 0.8rem;
+  color: #d6d5c9;
+}
+
+.search_box span i {
+  color: #d6d5c9;
+  cursor: pointer;
+}
+
+.navigation_group {
+}
+
+.nav_active {
+  color: #f9a826;
 }

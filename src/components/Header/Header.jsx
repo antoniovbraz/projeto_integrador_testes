@@ -1,8 +1,31 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
+
+const navLinks = [
+  {
+    path: "/home",
+    display: "Home",
+  },
+  {
+    path: "/about",
+    display: "About",
+  },
+  {
+    path: "/cars",
+    display: "Cars",
+  },
+  {
+    path: "/blogs",
+    display: "Blog",
+  },
+  {
+    path: "/contact",
+    display: "Contact",
+  },
+];
 
 const Header = () => {
   return (
@@ -94,6 +117,41 @@ const Header = () => {
               </button>
             </Col>
           </Row>
+        </Container>
+      </div>
+
+      {/* ==== main navigation ==== */}
+
+      <div className="main_navbar">
+        <Container>
+          <div className="navigation_group d-flex align-items-center justify-content-between">
+            <span className="mobile_menu">
+              <i class="ri-menu-line"></i>
+            </span>
+            <div className="navigation">
+              <div className="menu">
+                {navLinks.map((item, index) => (
+                  <NavLink
+                    to={item.path}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav_active nav_item" : "nav_item"
+                    }
+                    key={index}
+                  >
+                    {item.display}
+                  </NavLink>
+                ))}
+              </div>
+            </div>
+            <div className="nav_right">
+              <div className="search_box">
+                <input type="text" placeholder="Search" />
+                <span>
+                  <i class="ri-search-line"></i>
+                </span>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
     </header>
