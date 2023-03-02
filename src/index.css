@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #f46036;
+  color: #554d43;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -46,7 +46,7 @@ ul {
 }
 
 .section_title {
-  color: #f46036;
+  color: #554d43;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -69,8 +69,8 @@ section {
 
 .btn {
   padding: 7px 15 px;
-  background: #f46036;
-  color: #d6d5c9;
+  background: #554d43 !important;
+  color: #d6d5c9 !important;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -78,8 +78,8 @@ section {
 }
 
 .btn:hover {
-  color: #d6d5c9;
-  background: #f45f36e0;
+  color: #d6d5c9 !important;
+  background: #2c261f !important;
 }
 
 /* ===== pre-define css responsiveness ===== */

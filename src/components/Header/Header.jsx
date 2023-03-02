@@ -4,6 +4,8 @@ import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
 
+import Login from "../Login/Login";
+
 const navLinks = [
   {
     path: "/home",
@@ -44,13 +46,13 @@ const Header = () => {
             </Col>
             <Col lg="6" md="6" sm="6">
               <div className="header_top_right">
-                <Link to="#" className="d-flex align-items-center gap-1">
+                {/* <Link to="#" className="d-flex align-items-center gap-1">
                   <i class="ri-login-circle-line"></i> Login
-                </Link>
-
-                <Link to="#" className="d-flex align-items-center gap-1">
+                </Link> */}
+                {/* <Link to="#" className="d-flex align-items-center gap-1">
                   <i class="ri-user-line"></i> Register
-                </Link>
+                </Link> */}
+                <Login />
               </div>
             </Col>
           </Row>

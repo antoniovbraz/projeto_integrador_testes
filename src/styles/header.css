@@ -1,7 +1,7 @@
 /* ====== Top header style ====== */
 .header_top {
   padding: 10px 0;
-  background: #f46036;
+  background: #0a100d;
   color: #d6d5c9;
 }
 
@@ -23,7 +23,7 @@
 
 .header_top_help i {
   background: #d6d5c9;
-  color: #f46036;
+  color: #554d43;
   padding: 2px 4px;
   border-radius: 50px;
   font-size: 0.8rem;
@@ -61,7 +61,7 @@
 
 .logo h1 a {
   text-decoration: none;
-  color: #f46036;
+  color: #554d43;
   font-weight: 700;
 }
 
@@ -71,13 +71,13 @@
 
 .header_location span i {
   font-size: 2.2rem;
-  color: #f46036;
+  color: #554d43;
 }
 
 .header_location-content h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #f46036;
+  color: #554d43;
 }
 
 .header_location-content h6 {
@@ -85,7 +85,7 @@
 }
 
 .header_btn {
-  background: #f46036 !important;
+  background: #554d43 !important;
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -110,17 +110,13 @@
 
 .main_navbar {
   padding: 15px 0;
-  background: #f46036;
+  background: #d6d5c9;
 }
 
 .mobile_menu {
   color: #d6d5c9;
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.mobile_menu {
-  display: none;
 }
 
 .menu {
@@ -130,13 +126,13 @@
 }
 
 .nav_item {
-  color: #d6d5c9;
+  color: #35302a;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav_item:hover {
-  color: #f9a826;
+  color: #27221c;
 }
 
 .search_box {
@@ -145,7 +141,7 @@
   display: flex;
   align-items: center;
   border-radius: 50px;
-  background: #da5631;
+  background: #554d43;
 }
 
 .search_box input {
@@ -166,9 +162,14 @@
   cursor: pointer;
 }
 
-.navigation_group {
+.nav_active {
+  color: #554d43;
 }
 
-.nav_active {
-  color: #f9a826;
+@media only screen and (max-width: 768px) {
+  .header_top,
+  .header_middle,
+  .nav_right {
+    display: none;
+  }
 }
